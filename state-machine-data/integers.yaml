@@ -1,0 +1,32 @@
+name: "integer"
+priority: 1
+states:
+  # Start state
+  q0:
+    "0": "q1"
+    "1": "q1"
+    "2": "q1"
+    "3": "q1"
+    "4": "q1"
+    "5": "q1"
+    "6": "q1"
+    "7": "q1"
+    "8": "q1"
+    "9": "q1"
+  # Processing integer
+  q1:
+    "0": "q1"
+    "1": "q1"
+    "2": "q1"
+    "3": "q1"
+    "4": "q1"
+    "5": "q1"
+    "6": "q1"
+    "7": "q1"
+    "8": "q1"
+    "9": "q1"
+    " ": "END|INTEGER"
+    ";": "END|INTEGER"
+    "=": "END|INTEGER"
+    "\n": "END|INTEGER"
+    "default": "qerror"

@@ -1,0 +1,12 @@
+name: "equal"
+priority: 1
+states:
+  # Start state
+  q0:
+    "=": "q1"
+  # Processing
+  q1:
+    " ": "END|EQUAL"
+    ";": "END|EQUAL"
+    "\n": "END|EQUAL"
+    "default": "qerror"

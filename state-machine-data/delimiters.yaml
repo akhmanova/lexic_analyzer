@@ -1,0 +1,12 @@
+# Delimiters:
+# ` `
+# ;
+# \n
+name: "delimiter"
+priority: 2
+states:
+  # Start state
+  q0:
+    " ": "END|DELIMITER"
+    ";": "END|DELIMITER"
+    "\n": "END|DELIMITER"

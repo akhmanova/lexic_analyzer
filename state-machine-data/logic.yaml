@@ -1,0 +1,51 @@
+# Logic functions:
+# AND
+# OR
+# XOR
+# NOT
+name: "logic"
+priority: 2
+states:
+  # Start state
+  q0:
+    "A": "q2"
+    "O": "q5"
+    "X": "q7"
+    "N": "q10"
+
+  # Processing AND
+  q2:
+    "N" : "q3"
+    "default": "qerror"
+  q3:
+    "D": "q1"
+    "default": "qerror"
+  q1:
+    " ": "END|LOGIC"
+    ";": "END|LOGIC"
+    "\n": "END|LOGIC"
+    ")": "END|LOGIC"
+    "(": "END|LOGIC"
+    "=": "END|LOGIC"
+    "default": "qerror"
+
+  # Processing OR
+  q5:
+    "R": "q1"
+    "default": "qerror"
+
+  # Processing XOR
+  q7:
+    "O": "q8"
+    "default": "qerror"
+  q8:
+    "R": "q1"
+    "default": "qerror"
+
+  # Processing NOT
+  q10:
+    "O": "q11"
+    "default": "qerror"
+  q11:
+    "T": "q1"
+    "default": "qerror"

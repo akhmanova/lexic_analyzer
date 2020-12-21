@@ -1,0 +1,12 @@
+# Logic functions:
+# AND
+# OR
+# XOR
+# NOT
+name: "brackets"
+priority: 2
+states:
+  # Start state
+  q0:
+    "(": "END|BRACKET"
+    ")": "END|BRACKET"
