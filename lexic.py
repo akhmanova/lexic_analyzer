@@ -28,6 +28,7 @@ def exit_with_error(data, pos):
     error_msg = f"Lexic error: unexpected data. \n {new_str}\n" + ' ' * (pos-start+1) + '^'
     return error_msg
 
+
 def lexic(data, state_machines):
     # Preprocessing data
     data = data.upper() + ' '
