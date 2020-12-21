@@ -1,5 +1,5 @@
 _______________________________________________
-##The lexic analyzer for boolean logic operations
+## The lexic analyzer for boolean logic operations
 by Elina Akhmanova 
 _______________________________________________
 
